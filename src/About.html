@@ -4,109 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About me</title>
+    <link href="dist/output.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b47041fb88.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
-    <header>
-        <nav> 
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="Adventures.html">Adventures</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Hobbies.html">Hobbies</a></li>
-                <li><a href="contacts.html">Contact</a></li>
+    <header class="bg-blue-950 text-cyan-500">
+        <nav class="grid grid-cols-2 md:flex justify-between mx-4 py-3">
+            <h2 class="text-2xl">Portfolio</h2>
+            <div id="hamburger" class="md:hidden col-span-1 text-end">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+            <div id = "cancel" class="hidden col-span-1 text-end">
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <ul id = "menu" class="hidden gap-5 md:flex items-center text-center col-span-2">
+                <li><a class="hover:text-gray-300" href="home.html">Home</a></li>
+                <li><a class="hover:text-gray-300" href="Adventures.html">Adventures</a></li>
+                <li><a class="hover:text-gray-300" href="skills.html">Skills</a></li>
+                <li><a class="hover:text-gray-300" href="About.html">About</a></li>
+                <li><a class="hover:text-gray-300" href="Hobbies.html">Hobbies</a></li>
+                <li><a class="hover:text-gray-300" href="contacts.html">Contact</a></li>
 
             </ul>
+
         </nav>
     </header>
-    <section>
-        Welcome. Just some information about myself
+    <section class="bg-gradient-to-r from-cyan-500 to-blue-500">
+        <h1 class="text-5xl py-6 text-center">
+            Welcome. Just some information about myself
+        </h1>
     </section>
-    <section>
+    <section class="relative bg-[url('images/workplace-with-smartphone-notebook-black-table-top-view.jpg')] bg-cover">
         <div>
-            <img width="300" src="images/[removal.ai]_7f2d2c56-932d-4134-88d0-0bef44deac49-notebook_flat_style.png" alt="">
-            <img width="300"  id = "sec-img" src="images/[removal.ai]_7f2d2c56-932d-4134-88d0-0bef44deac49-notebook_flat_style.png" alt="">
-            <p>My name is Fikreyohanes Abera Shibru. I am 20 years old currently. I was born in addis and lived there since. i finished my high school education at cruise school. Now I am learning sofware enginnering at AAiT. I'm now at my 3rd year. I think I am satisfied with my carrer choice because there is a lot more creativity and a lot to discover in this field.  </p>
+            <img class="md:w-[40vw] w-[80vw] m-auto" src="images/[removal.ai]_7f2d2c56-932d-4134-88d0-0bef44deac49-notebook_flat_style.png" alt="">
+            <p class="absolute w-[60vw] text-[3vw] leading-[12vw] md:text-[1.5vw] top-[3.2vw] left-[50%] -translate-x-1/2 text-center md:leading-[5.271vw] md:w-[30vw]">My name is Fikreyohanes Abera Shibru. I am 20 years old currently. I was born in addis and lived there since. i finished my high school education at cruise school. Now I am learning sofware enginnering at AAiT. I'm now at my 3rd year. I think I am satisfied with my carrer choice because there is a lot more creativity and a lot to discover in this field.  </p>
 
         </div>
     </section>
     <section>
-        <h1>Favorites</h1>
-        <table>
-            <tr>
-                <th>Categories</th>
-                <th>Favorites</th>
-                <th>Least Favorites</th>
-            </tr>
-            <tr>
-                <td>Food</td>
-                <td>I don't have much preferences, but i like "shimbra asa"</td>
-                <td>All are Good</td>
-            </tr>
-            <tr>
-                <td>Sport</td>
-                <td>Football and pingpong</td>
-                <td>Not really a fan of bodybuilding</td>
-            </tr>
-            <tr>
-                <td>Movies</td>
-                <td>Probably Classic Home alone and inception out of the ten movies i watched</td>
-                <td>I don't like movies themselves</td>
-            </tr>
-            <tr>
-                <td>Football player</td>
-                <td>Seeing players like iniesta, debruyne and ronaldinho is glorious</td>
-                <td>None. Disliking and Rivalry are different things</td>
-            </tr>
-            <tr>
-                <td>Holiday</td>
-                <td>Easter</td>
-                <td>None</td>
-            </tr>
-            <tr>
-                <td>Video Game</td>
-                <td>Just cause 3 remains my favorite</td>
-                <td>Minecraft</td>
-            </tr>
-        </table>
+        <h1 class="text-5xl text-center mt-6">Favorites</h1>
     </section>
-    <section>
-        <h1>My future Plans</h1>
+    <div class="flex flex-col">
+        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+            <div class="py-2 inline-block w-screen sm:px-6 lg:px-8">
+                <div class="overflow-hidden">
+                    <table class="w-screen">
+                        <thead class="border-b">
+                            <tr>
+                                <th scope="col" class="text-lg font-medium text-gray-900 px-6 py-4 text-left">Categories</th>
+                                <th scope="col" class="text-lg font-medium text-gray-900 px-6 py-4 text-left">Favorites</th>
+                                <th scope="col" class="text-lg font-medium text-gray-900 px-6 py-4 text-left">Least favorites</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-b">
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">Food</td>
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">I don't have much preferences, but i like "shimbra asa"</td>
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">All are good</td>
+                            </tr>
+                            <tr class="bg-white border-b">
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">Sport</td>
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">Football and pingpong</td>
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">Not really a fan of bodybuilding</td>
+                            </tr>
+                            <tr class="bg-white border-b">
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">Movies</td>
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">Probably Classic Home alone and inception out of the ten movies i watched</td>
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">I don't like movies themselves</td>
+                            </tr>
+                            <tr class="bg-white border-b">
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">Football Players</td>
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">Seeing players like iniesta, debruyne and ronaldinho is glorious</td>
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">None. Disliking and Rivalry are different things</td>
+                            </tr>
+                            <tr class="bg-white border-b">
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">Holiday</td>
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">Easter</td>
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">None</td>
+                            </tr>
+                            <tr class="bg-white border-b">
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">Video Game</td>
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">Just cause 3 remains my favorite</td>
+                                <td class="text-md text-gray-900 font-light px-6 py-4 whitespace-nowrap">Minecraft</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1 class="text-center text-4xl">My future Plans</h1>
+    <section class="flex justify-evenly items-center py-8">
+      
         <figure>
             <img width="95" height="90" src="images/11725.jpg" alt="">
             <figcaption>AI developer</figcaption>
         </figure>
 
-        <img width="95" height="120" src="images/[removal.ai]_d090d94c-0989-475c-bc5d-465b83a8ba6f-blank_chalk_menu_street_blackboard_stand.png" alt="">
-        <h4>Data scientist</h4>
-        <img width="95" height="90" src="images/wooden-sign-with-symbol.jpg" alt="">
-        <h4>Designer</h4>
-        <aside>
-            Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems. Specific applications of AI include expert systems, natural language processing, speech recognition and machine vision.
+        <div class="">
+            <img width="95" height="120" src="images/[removal.ai]_d090d94c-0989-475c-bc5d-465b83a8ba6f-blank_chalk_menu_street_blackboard_stand.png" alt="">
+            <h4>Data scientist</h4>
 
-        </aside>
+        </div>
+        <div class="">
+            <img width="95" height="90" src="images/wooden-sign-with-symbol.jpg" alt="">
+            <h4>Designer</h4>
+
+        </div>
+
+
+    
         
     </section>
 
 
-    
+    <script src = "js/index.js"></script>
 </body>
 
-<footer>
-    <p>Thank you for visiting my website.check out these links to explore further</p>
+<footer class="bg-sky-950 text-center p-6">
+    <p class="mb-5 text-red-500">Thank you for visiting my website. Check out these links to explore further</p>
     <ul>
-        <li><a href="Adventures.html">Adventures</a></li>
-        <li><a href="contacts.html">Contact</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Hobbies.html">Hobbies</a></li>
+        <li><a class="text-cyan-400 mt-2 hover:text-yellow-400" href="Adventures.html">Adventures</a></li>
+        <li><a class="text-cyan-400 mt-2 hover:text-yellow-400" href="contacts.html">Contact</a></li>
+        <li><a class="text-cyan-400 mt-2 hover:text-yellow-400" href="About.html">About</a></li>
+        <li><a class="text-cyan-400 mt-2 hover:text-yellow-400" href="Hobbies.html">Hobbies</a></li>
     </ul>
+    <address class="my-4">
+        <span class="text-red-500"><i class="fa-solid fa-phone"></i> +25141225499</span> <br>
+        <span class="text-red-500"><i class="fa-solid fa-location-dot 2xl"></i> AAiT, 5 kilo
+            Addis Ababa
+            Ethiopia </span> <br> 
 
-    <div>
-        <a href="godfathershemsu@gmail.com"><i class="fa-brands fa-google fa-2xl"></i></a>
-        <a href="t.me/FikreyohanesAbera"><i class="fa-brands fa-telegram fa-2xl"></i></a>
-        <a href=""><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+        <span class="text-red-500"><i class="fa-solid fa-envelope"></i>
+            sampleemail@gmail.com</span>
+    </address>
+
+    <div class="mt-5">
+        <a class="text-cyan-400 hover:text-yellow-400 pl-3" href="godfathershemsu@gmail.com"><i class="fa-brands fa-google fa-2xl"></i></a>
+        <a class="text-cyan-400 hover:text-yellow-400 pl-3" href="t.me/FikreyohanesAbera"><i class="fa-brands fa-telegram fa-2xl"></i></a>
+        <a class="text-cyan-400 hover:text-yellow-400 pl-3" href=""><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
 
     </div>
 </footer>
