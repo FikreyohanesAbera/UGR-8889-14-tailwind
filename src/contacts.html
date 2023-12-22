@@ -1,54 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
+    <link href="dist/output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b47041fb88.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    <header>
-        <nav> 
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="Adventures.html">Adventures</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Hobbies.html">Hobbies</a></li>
-                <li><a href="contacts.html">Contact</a></li>
+    <header class="bg-blue-950 text-cyan-500">
+        <nav class="grid grid-cols-2 md:flex justify-between mx-4 py-3">
+            <h2 class="text-2xl">Portfolio</h2>
+            <div id="hamburger" class="md:hidden col-span-1 text-end">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+            <div id="cancel" class="hidden col-span-1 text-end">
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <ul id="menu" class="hidden gap-5 md:flex items-center text-center col-span-2">
+                <li><a class="hover:text-gray-300" href="home.html">Home</a></li>
+                <li><a class="hover:text-gray-300" href="Adventures.html">Adventures</a></li>
+                <li><a class="hover:text-gray-300" href="skills.html">Skills</a></li>
+                <li><a class="hover:text-gray-300" href="About.html">About</a></li>
+                <li><a class="hover:text-gray-300" href="Hobbies.html">Hobbies</a></li>
+                <li><a class="hover:text-gray-300" href="contacts.html">Contact</a></li>
 
             </ul>
+
         </nav>
     </header>
     <div>
-        <h1>Contact Me</h1>
-        <img width="320" src="images/89763.jpg" alt="con-img">
+        <h1 class="absolute right-1 md:right-6 top-52 text-6xl">Contact Me</h1>
+        <img class="w-full h-96 object-cover" src="images/89763.jpg" alt="con-img">
     </div>
-    <div>
-        <h1>Address</h1>
-        <address>
-            +251941225499 <br>
-            AAiT, 5 kilo
-            Addis Ababa
-            Ethiopia
-        </address>
-        <h3>Want to Write me Something?</h3>
-        <a href="godfathershemsu@gmail.com">Email</a>
+    <div class="bg-[url('images/5043374.jpg')] lg:h-96 text-center py-4 lg:flex m-auto justify-evenly bg-cover bg-center items-center">
+        <div class="md:text-3xl text-2xl text-zinc-50 text-center">
+            <address>
+                <span><i class="fa-solid fa-phone"></i> +25141225499</span> <br> <br>
+                <span><i class="fa-solid fa-location-dot 2xl"></i> AAiT, 5 kilo
+                    Addis Ababa
+                    Ethiopia </span> <br> <br>
+
+                <span><i class="fa-solid fa-envelope"></i>
+                    sampleemail@gmail.com</span>
+            </address>
+            
+        </div>
+
+        <div class="Talk lg:m-0 m-auto mt-24 rounded bg-slate-100 w-72 lg:w-1/4 p-6">
+            <h2 class="mb-4 text-2xl">Work With Me</h2>
+            <p class="mb-6 text-start ml-2">Describe what you want me to do below and get started</p>
+            <a class="ml-2 border-2 bg-red-400 hover:bg-blue-400 rounded-lg p-2 px-4" href="godfathershemsu@gmail.com">Start</a>
+        </div>
+
+
     </div>
+    <script src="js/index.js"></script>
 </body>
-<footer>
+<footer class="bg-sky-950 text-center p-6">
+    <p class="mb-5 text-red-500">Thank you for visiting my website. Check out these links to explore further</p>
     <ul>
-        <li><a href="Adventures.html">Adventures</a></li>
-        <li><a href="contacts.html">Contact</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Hobbies.html">Hobbies</a></li>
+        <li><a class="text-cyan-400 mt-2 hover:text-yellow-400" href="Adventures.html">Adventures</a></li>
+        <li><a class="text-cyan-400 mt-2 hover:text-yellow-400" href="contacts.html">Contact</a></li>
+        <li><a class="text-cyan-400 mt-2 hover:text-yellow-400" href="About.html">About</a></li>
+        <li><a class="text-cyan-400 mt-2 hover:text-yellow-400" href="Hobbies.html">Hobbies</a></li>
     </ul>
+    <address class="my-4">
+        <span class="text-red-500"><i class="fa-solid fa-phone"></i> +25141225499</span> <br>
+        <span class="text-red-500"><i class="fa-solid fa-location-dot 2xl"></i> AAiT, 5 kilo
+            Addis Ababa
+            Ethiopia </span> <br> 
 
-    <div class = "social media">
-        <a href="godfathershemsu@gmail.com"><i class="fa-brands fa-google fa-2xl"></i></a>
-        <a href=""><i class="fa-brands fa-telegram fa-2xl"></i></a>
-        <a href=""><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+        <span class="text-red-500"><i class="fa-solid fa-envelope"></i>
+            sampleemail@gmail.com</span>
+    </address>
+
+    <div class="mt-5">
+        <a class="text-cyan-400 hover:text-yellow-400 pl-3" href="godfathershemsu@gmail.com"><i class="fa-brands fa-google fa-2xl"></i></a>
+        <a class="text-cyan-400 hover:text-yellow-400 pl-3" href="t.me/FikreyohanesAbera"><i class="fa-brands fa-telegram fa-2xl"></i></a>
+        <a class="text-cyan-400 hover:text-yellow-400 pl-3" href=""><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
 
     </div>
-
 </footer>
+
 </html>
